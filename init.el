@@ -42,9 +42,10 @@
      cider
      hc-zenburn-theme
      smex
-
+     ess
      ;;experimental
-     undo-tree
+
+     ;;undo-tree
      ;;guide-key
 )))
 (condition-case nil
@@ -52,6 +53,11 @@
   (error
    (package-refresh-contents)
    (init--install-packages)))
+
+;;default modes
+(electric-indent-mode 1)
+(global-visual-line-mode 1)
+
 
 (require 'appearance)
 
