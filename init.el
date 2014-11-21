@@ -60,13 +60,17 @@
 ;; Lets start with a smattering of sanity
 (require 'sane-defaults)
 
+(require 'smart-tab)
 
 ;;setup-extensions
 (require 'setup-hippie)
 (require 'setup-ido)
 (require 'setup-windmove) ;;move to keybindings?
 (require 'setup-paredit)
-(require 'smart-tab)
+(require 'setup-magit)
+
+
+
 
 
 ;;global smart tabs
