@@ -42,9 +42,11 @@
      cider
      hc-zenburn-theme
      smex
+     smart-tab
+     
 
      ;;experimental
-     undo-tree
+     ;;undo-tree
      ;;guide-key
 )))
 (condition-case nil
@@ -60,15 +62,19 @@
 
 
 ;;setup-extensions
+(require 'setup-hippie)
 (require 'setup-ido)
 (require 'setup-windmove) ;;move to keybindings?
 (require 'setup-paredit)
+(require 'smart-tab)
 
+
+;;global smart tabs
+(global-smart-tab-mode 1)
 
 ;; Smart M-x is smart
 (require 'smex)
 (smex-initialize)
-
 
 ;;lang specific setup files
 ;;(eval-after-load 'clojure-mode '(require 'setup-clojure-mode))

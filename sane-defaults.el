@@ -125,4 +125,5 @@
     (dotimes (i 10)
       (when (= p (point)) ad-do-it))))
 
+
 (provide 'sane-defaults)
