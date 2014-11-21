@@ -43,9 +43,10 @@
      hc-zenburn-theme
      smex
      smart-tab
-     
+     ess
 
      ;;experimental
+
      ;;undo-tree
      ;;guide-key
 )))
@@ -54,6 +55,11 @@
   (error
    (package-refresh-contents)
    (init--install-packages)))
+
+;;default modes
+(electric-indent-mode 1)
+(global-visual-line-mode 1)
+
 
 (require 'appearance)
 

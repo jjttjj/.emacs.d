@@ -125,5 +125,10 @@
     (dotimes (i 10)
       (when (= p (point)) ad-do-it))))
 
+;;added by me
+(setq longlines-auto-wrap t)
+
 
 (provide 'sane-defaults)
+
+
