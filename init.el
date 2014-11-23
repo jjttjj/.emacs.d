@@ -74,6 +74,7 @@
 (require 'setup-windmove) ;;move to keybindings?
 (require 'setup-paredit)
 (require 'setup-magit)
+(require 'setup-ess)
 
 
 
