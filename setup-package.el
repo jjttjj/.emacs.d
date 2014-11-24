@@ -3,6 +3,7 @@
 
 ;; Add melpa to package repos
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 
 (package-initialize)
 

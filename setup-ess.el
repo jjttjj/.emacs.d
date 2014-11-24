@@ -5,4 +5,7 @@
 ;; leave my underscore key alone!
 (ess-toggle-underscore nil)
 
+(setq ess-use-auto-complete t)
+
+
 (provide 'setup-ess)

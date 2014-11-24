@@ -45,6 +45,8 @@
      smart-tab
      ess
 
+     auto-complete
+     
      ;;experimental
 
      ;;undo-tree
@@ -75,6 +77,7 @@
 (require 'setup-paredit)
 (require 'setup-magit)
 (require 'setup-ess)
+(require 'setup-auto-complete)
 
 
 
