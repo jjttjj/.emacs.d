@@ -78,7 +78,7 @@
 (require 'setup-magit)
 (require 'setup-ess)
 (require 'setup-auto-complete)
-
+(require 'setup-recentf)
 
 
 
