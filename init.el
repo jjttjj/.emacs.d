@@ -44,7 +44,8 @@
      smex
      smart-tab
      ess
-
+     rainbow-delimiters
+     highlight-parentheses
      auto-complete
      
      ;;experimental
