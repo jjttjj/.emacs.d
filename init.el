@@ -94,8 +94,6 @@
 ;;lang specific setup files
 ;;(eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 
-;; Map files to modes
-(require 'mode-mappings)
 
 (require 'key-bindings)
 
