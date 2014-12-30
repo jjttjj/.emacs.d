@@ -104,5 +104,11 @@
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
 
+;;;;;;;;;;;;;;;;;;;;;;
+;;keyboard macros;;
+(global-set-key [f10]  'start-kbd-macro)
+(global-set-key [f11]  'end-kbd-macro)
+(global-set-key [f12]  'call-last-kbd-macro)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
