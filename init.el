@@ -109,4 +109,10 @@
 (global-set-key [f12]  'call-last-kbd-macro)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+;;UNORGANIZED
+
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+
+
+(show-paren-mode 1)
