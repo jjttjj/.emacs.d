@@ -38,8 +38,8 @@
 (add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljx$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.hl\\'" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.hl" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.boot" . clojure-mode))
 
 
 
