@@ -28,10 +28,7 @@
 ;; Enable eldoc in Clojure buffers
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-;;these maybe dont belong here
-(add-hook 'clojure-mode-hook 'rainbow-delimiters)
-(add-hook 'clojure-mode-hook 'highlight-parentheses)
-(add-hook 'clojure-mode-hook 'show-paren-mode)
+
 
 (autoload 'clojure-mode "clojure-mode")
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
@@ -40,6 +37,27 @@
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.hl" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot" . clojure-mode))
+
+;;these maybe dont belong here
+(add-hook 'clojure-mode-hook (lambda () (paredit-mode 1)))
+(add-hook 'clojure-mode-hook (lambda () (rainbow-delimiters-mode 1)))
+(add-hook 'clojure-mode-hook (lambda () (highlight-parentheses-mode 1)))
+(add-hook 'clojure-mode-hook (lambda () (show-paren-mode 1)))
+
+;;clj-refactor
+(require 'clj-refactor)
+(add-hook 'clojure-mode-hook (lambda ()
+                               (clj-refactor-mode 1)
+
+                               (cljr-add-keybindings-with-prefix "C-c C-m")
+
+                               ))
+
+;;hoplon indentation
+(put-clojure-indent 'defc 'defun)
+(put-clojure-indent 'defc= 'defun)
+(put-clojure-indent 'loop-tpl 1)
+(put-clojure-indent 'div 1)
 
 
 

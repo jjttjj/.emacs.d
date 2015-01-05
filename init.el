@@ -82,7 +82,7 @@
 (require 'setup-recentf)
 
 
-
+(require 'setup-clojure-mode)
 
 ;;global smart tabs
 (global-smart-tab-mode 1)
